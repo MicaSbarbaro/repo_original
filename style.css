@@ -1,0 +1,377 @@
+@charset "UTF-8";
+/*....................VARIABLES.....................*/
+/*....................RESET.....................*/
+@import url("https://fonts.googleapis.com/css2?family=Rambla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rambla", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #f7f9f9;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 200px;
+}
+
+/*................NAVBAR..................*/
+nav {
+  display: flex;
+  padding: 20px 10px;
+  justify-content: space-between;
+  background-color: black;
+  position: sticky;
+}
+
+.nav_list {
+  display: flex;
+  gap: 30px;
+}
+
+.nav_link,
+.nav_brand {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*....................FOOTER.....................*/
+footer {
+  padding: 50px 40px;
+  background-color: #000000;
+  color: white;
+  text-align: right;
+  font-size: 24px;
+  text-align: center;
+}
+footer .logo {
+  border-radius: 50%;
+  padding: 15px 15px;
+}
+
+/*hero*/
+.hero_imágen_index {
+  background-image: url(../imgs/manigueta.png);
+  width: 100%;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #9967ce;
+}
+
+.hero_text {
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  font-size: 100px;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.grid_index {
+  display: grid;
+  grid-template-areas: "i0 ti ti" "i0 i1 i2";
+}
+.grid_index .intro_index {
+  grid-area: i0;
+}
+.grid_index .título_integrantes {
+  grid-area: ti;
+}
+.grid_index .integrante1 {
+  grid-area: i1;
+}
+.grid_index .integrante2 {
+  grid-area: i2;
+}
+.grid_index > div {
+  text-align: start;
+  padding: 20px 20px;
+}
+.grid_index .fotoequipo {
+  border-radius: 50%;
+}
+
+/*hero pag de serigrafía*/
+.hero_imágen_bastidor {
+  background-image: url(../imgs/manosenbastidor2.jpg);
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*grid*/
+.grid_container_grabado {
+  display: grid;
+  grid-template-areas: "intro intro intro intro" "info1 info2 info3 info4";
+}
+.grid_container_grabado .intro_grabado {
+  grid-area: intro;
+}
+.grid_container_grabado .info_1_grabado {
+  grid-area: info1;
+}
+.grid_container_grabado .info_2_grabado {
+  grid-area: info2;
+}
+.grid_container_grabado .info_3_grabado {
+  grid-area: info3;
+}
+.grid_container_grabado .info_4_grabado {
+  grid-area: info4;
+}
+.grid_container_grabado > div {
+  text-align: start;
+  padding: 10px 10px;
+}
+.grid_container_grabado .subtitulo_grabado_intro {
+  text-align: start;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+.grid_container_grabado .subtitulos_grabado {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+/*hero pag de taller*/
+.hero_imágen_mesadetrabajo {
+  background-image: url(../imgs/mesadetrabajo6.jpg);
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero_text_mesadetrabajo {
+  font-family: "Bebas Neue", sans-serif;
+  text-align: end;
+  font-size: 100px;
+  color: #000000;
+  padding: 125px 325px;
+}
+
+/*card taller*/
+.card_hero {
+  display: flex;
+}
+.card_hero img {
+  width: 60%;
+}
+.card_hero_content {
+  padding: 10px;
+  background-color: #9c7856;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grid_container_herramientas {
+  display: grid;
+  grid-template-areas: "h1 h2 h3 h4" "h5 h6 h7 h8";
+}
+.grid_container_herramientas .herramienta1 {
+  grid-area: h1;
+}
+.grid_container_herramientas .herramienta2 {
+  grid-area: h2;
+}
+.grid_container_herramientas .herramienta3 {
+  grid-area: h3;
+}
+.grid_container_herramientas .herramienta4 {
+  grid-area: h4;
+}
+.grid_container_herramientas .herramienta5 {
+  grid-area: h5;
+}
+.grid_container_herramientas .herramienta6 {
+  grid-area: h6;
+}
+.grid_container_herramientas .herramienta7 {
+  grid-area: h7;
+}
+.grid_container_herramientas .herramienta8 {
+  grid-area: h8;
+}
+.grid_container_herramientas > div {
+  text-align: start;
+  padding: 10px 10px;
+}
+.grid_container_herramientas .subtítulos {
+  text-align: start;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.carousel_piezas_serigraficas {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*carousel galería stickers*/
+#carousel_stickers .carousel-item {
+  width: 400px;
+  height: 500px;
+}
+#carousel_stickers .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#carousel_card_corazones .carousel-item {
+  width: 400px;
+  height: 500px;
+}
+#carousel_card_corazones .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#carousel_card_corazones .card-title {
+  text-align: center;
+  color: #000000;
+}
+
+.carousel-inner {
+  width: 600px;
+}
+
+/*carousel piezas digitales x galería*/
+.container-fluid {
+  background-color: rgb(115, 115, 115);
+}
+.container-fluid .carousel-item {
+  width: 100%;
+  height: 400px;
+}
+.container-fluid .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-fluid .card_title {
+  text-align: center;
+  color: #000000;
+}
+
+.grid_container_form_map {
+  display: grid;
+  grid-template-areas: "form form form map map";
+  gap: 10px;
+  padding: 10px;
+}
+.grid_container_form_map > div {
+  text-align: start;
+  padding: 20px 0;
+}
+.grid_container_form_map .item1 {
+  grid-area: form;
+  /*formulario de contacto*/
+}
+.grid_container_form_map .item1 label {
+  padding: 5px 20px;
+  display: inline-block;
+}
+.grid_container_form_map .item1 legend {
+  padding: 20px 20px;
+}
+.grid_container_form_map .item1 input[type=text], .grid_container_form_map .item1 textarea {
+  width: 90%;
+  margin: 10px 20px;
+  padding: 20px 20px;
+  border: 2px solid #CCC;
+  height: 20px;
+}
+.grid_container_form_map .item1 input[type=text_mensaje], .grid_container_form_map .item1 textarea {
+  width: 90%;
+  margin: 10px 20px;
+  padding: 20px 20px;
+  border: 2px solid #CCC;
+  height: 100%;
+}
+.grid_container_form_map .item1 .boton_enviar {
+  padding: 15px 105px;
+  background-color: #000000;
+  color: white;
+  font-family: "Rambla", sans-serif;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.grid_container_form_map .item2 {
+  grid-area: map;
+  /*mapa*/
+}
+.grid_container_form_map .item2 .mapa {
+  width: 100%;
+  height: 100%;
+  display: inline;
+  padding: 20px 20px;
+}
+
+/*font-family: 'Rambla', sans-serif;*/
+/*font-family: 'Bebas Neue', sans-serif;*/
+/*texto*/
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+  color: #fff;
+  background-color: #9967ce;
+  padding: 20px 20px;
+}
+
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  padding: 20px 20px;
+  color: #fff;
+  background-color: #000000;
+}
+
+h3 {
+  padding: 20px 20px;
+  color: white;
+  background-color: #9967ce;
+}
+
+h4 {
+  text-align: start;
+  font-weight: bold;
+  padding-top: 10px; 
+  padding-bottom: 10px;
+}
+
+h5 {
+  color: white;
+}
+
+h6 {
+  color: #333;
+}
+
+/*# sourceMappingURL=style.css.map */
