@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <!-- link de bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- link de css -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="" class="nav_brand"><img src="../imgs/manigueta/espatula_tintablanca2.png" class="tinta_blanca"></a>
+            <ul class="nav_list">
+              <li><a href="../index.html" class="nav_link">Inicio</a></li>
+                <li><a href="../pages/2_serigrafía.html" class="nav_link">Serigrafía</a></li>
+                <li><a href="../pages/3_taller.html" class="nav_link">Taller</a></li>
+                <li><a href="../pages/4_galería.html" class="nav_link">Galería</a></li>
+                <li><a href="../pages/5_contacto.html" class="nav_link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      
+      <div class="row">
+        <div class="col-12">
+          <h1>Galería</h1>
+        </div>
+      </div>
+      
+      <h2>Piezas Digitales</h2>
+
+      <!-- inicio del carrusel de piezas digitales x -->
+      <!-- final del carrusel de piezas digitales x -->
+      
+      <h2>Piezas Serigráficas</h2>
+      <section class="carousel_piezas_serigraficas">
+        
+        <!-- inicio del carrusel de stickers -->
+        <article id="carousel_stickers" class="col-sm-12 col-md-4 text-light p-3" class="carousel carousel-dark slide"><!-- tamaño del carrusel -->
+          <!-- marcas de las slides -->
+          <button type="button" data-bs-target="#carousel_stickers" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel_stickers" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel_stickers" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <!-- primer imágen -->
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="../imgs/stickers/sticker_bruja.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h6>sticker_bruja</h6>
+              <p>Descripción del sticker.</p>
+            </div>
+          </div>
+          <!-- segunda imágen -->
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../imgs/stickers/sticker_carpa.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h6>sticker_carpa</h6>
+              <p>Descripción del sticker_carpa.</p>
+            </div>
+          </div>
+          <!-- tercer imágen -->
+          <div class="carousel-item">
+            <img src="../imgs/stickers/sticker_ovni.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h6>sticker_ovni</h6>
+              <p>Descripción del sticker_ovni.</p>
+            </div>
+          </div>
+          <!-- botones laterales del carrusel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel_stickers" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel_stickers" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <!-- final del carrusel de stickers-->
+        </article>
+        
+        <!-- inicio del carrusel parches de corazones -->
+        <article id="carousel_card_corazones" class="col-sm-12 col-md-4 text-light p-3" class="carousel-slide">
+          <!-- primer imágen -->
+          <div class="carousel-item carousel-card active">
+            <img src="../imgs/parches/parche_negrorosa_corazon.jpg" class="d-block w-100" alt="...">
+          </div>
+          <!-- segunda imágen -->
+          <div class="carousel-item carousel-card">
+            <img src="../imgs/parches/parche_plateado_corazon.jpg" class="d-block w-100" alt="...">
+          </div>
+          <!-- tercer imágen -->
+          <div class="carousel-item carousel-card">
+            <img src="../imgs/parches/parche_negro_corazon.jpg" class="d-block w-100" alt="...">
+          </div>
+          <!-- botones laterales del carrusel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel_card_corazones" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel_card_corazones" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <!-- card del carrusel -->
+          <div class="card-body">
+            <h5 class="card-title">"Thank you, next"</h5>
+            <p class="card-text">Parches impresos en diversas telas. Diseño inspirado en la canción de Ariana Grande titulada "Thank you, next".</p>
+          </div>
+        </article>
+        <!-- final del carrusel parches de corazones -->
+        
+        <!-- inicio del carrusel prueba after -->
+        <article id="carousel3" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../imgs/parches/parche_negro_lobas.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../imgs/parches/parche_negro_lobas.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../imgs/parches/parche_negro_lobas2.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </article>
+      
+      </section>
+    </main>
+    
+    <!-- script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+    <footer>
+        <img src="../imgs/manigueta/espatula_enmano_fondoblanco.png" class="logo">
+        <p>© 2024, Tinta Atrevida, Serigrafía.</p>
+    </footer>  
+
+</body>
+</html>
