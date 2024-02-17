@@ -1,0 +1,61 @@
+@import 'base/vars';
+@import 'base/reset';
+
+@import 'components/navbar';
+@import 'components/footer';
+
+@import 'layouts/1index';
+@import 'layouts/2serigrafía';
+@import 'layouts/3taller';
+@import 'layouts/4galería';
+@import 'layouts/5contacto';
+@import 'layouts/mediaqueries';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rambla&display=swap');
+/*font-family: 'Rambla', sans-serif;*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*font-family: 'Bebas Neue', sans-serif;*/
+
+/*texto*/
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    color: #fff;
+    background-color: #9967ce;
+    padding: 20px 20px; 
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    padding: 20px 20px;
+    color: #fff; 
+    background-color: #000000;
+}
+
+h3 {
+    padding: 20px 20px; 
+    color: white;
+    background-color: #9967ce;
+}
+
+h4 {
+    text-align: start;
+    font-weight: bold;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+}
+
+h5 {
+    color: #000000;
+    text-align: start;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+h6 {
+    color: white;
+}
