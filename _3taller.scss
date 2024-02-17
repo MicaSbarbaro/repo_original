@@ -1,0 +1,87 @@
+.grid_container_infotaller {
+    display: grid;  
+    grid-template-areas: 
+    'it1 it2';
+
+    .infotaller1 {
+        grid-area: it1;
+    }  
+    .infotaller2 {
+        grid-area: it2;
+    }  
+
+    & > div {
+        text-align: start;
+        padding: 10px 10px;
+    }
+}
+
+.grid_container_herramientas {
+    display: grid;  
+    grid-template-areas: 
+    'h1 h2 h3 h4'
+    'h5 h6 h7 h8'
+    'h9 h10 h11 h12'
+    'h13 h13 h14 h14';
+
+    .herramienta1 {
+        grid-area: h1;
+    }
+
+    .herramienta2 {
+        grid-area: h2;
+    }
+
+    .herramienta3 {
+        grid-area: h3;
+    }
+
+    .herramienta4 {
+        grid-area: h4;
+    }
+
+    .herramienta5 {
+        grid-area: h5;
+    }
+
+    .herramienta6 {
+        grid-area: h6;
+    }
+
+    .herramienta7 {
+        grid-area: h7;
+    }
+
+    .herramienta8 {
+        grid-area: h8;
+    }
+
+    .herramienta9 {
+        grid-area: h9;
+    }
+
+    .herramienta10 {
+        grid-area: h10;
+    }
+
+    .herramienta11 {
+        grid-area: h11;
+    }
+
+    .herramienta12 {
+        grid-area: h12;
+    }
+
+    .herramienta13 {
+        grid-area: h13;
+    }
+
+    .herramienta14 {
+        grid-area: h14;
+    }
+
+    & > div {
+        text-align: start;
+        padding: 10px 10px;
+    }
+}

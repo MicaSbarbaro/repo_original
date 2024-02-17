@@ -1,0 +1,56 @@
+/*hero pag de serigrafía*/
+.hero_imágen_bastidor {
+    background-image: url(../../imgs/manosenbastidor2.jpg);
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.hero_text {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 100px;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.grid_index { 
+	display: grid;
+    grid-template-areas:
+    'i0 ti ti'
+    'i0 i1 i2';
+
+    .intro_index { 
+        grid-area: i0;
+    }
+
+    .título_integrantes { 
+        grid-area: ti;
+    }
+
+    .integrante1 { 
+        grid-area: i1;
+        align-items: center;
+    }
+
+    .integrante2 { 
+        grid-area: i2;
+        align-items: center;
+    }
+
+    & > div {
+        text-align: start;
+        padding: 20px 20px;
+    }
+
+    .subtítulo_nombre {
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 8px;   
+    }
+
+    .fotoequipo { 
+        border-radius: 50%; 
+    }
+}

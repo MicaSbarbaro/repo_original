@@ -1,0 +1,62 @@
+.grid_container_form_map {
+    display: grid;
+    grid-template-areas: 'form form form map map';
+    gap: 10px;
+    padding: 10px;
+    & > div {
+        text-align: start;
+        padding: 20px 0;
+    }
+    .item1 {
+        grid-area: form;
+        /*formulario de contacto*/
+        label {
+            padding: 5px 20px;
+            display: inline-block;
+        }
+        legend {
+            padding: 20px 20px;
+        }
+        input[type=text], textarea {
+            width: 90%;
+            margin: 10px 20px;
+            padding: 20px 20px;
+            border: 2px solid #CCC;
+            height: 20px;
+        }
+        input[type=text_mensaje], textarea {
+            width: 90%;
+            margin: 10px 20px;
+            padding: 20px 20px;
+            border: 2px solid #CCC;
+            height: 100%;
+        }
+        .boton_enviar {
+            padding: 15px 105px;
+            background-color: #000000;
+            color:white;
+            font-family: 'Rambla', sans-serif;
+            border: none;
+            text-align: center;
+            
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+    }
+    .item2 {
+        grid-area: map;
+        /*mapa*/
+        .mapa {
+            width: 100%;
+            height: 100%;
+            display: inline;
+            padding: 20px 20px;
+        }
+    }
+}

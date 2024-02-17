@@ -1,0 +1,57 @@
+.carousel_piezas_serigraficas {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*carousel galería stickers*/
+#carousel_stickers {
+    .carousel-item {
+        width: 400px;
+        height: 500px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+#carousel_card_corazones {
+    .carousel-item {
+        width: 400px;
+        height: 500px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .card-title {
+        text-align: center;
+        color: #000000;
+    }
+}
+
+.carousel-inner {
+    width: 600px;
+}
+
+
+
+ /*carousel piezas digitales x galería*/
+.container-fluid {
+    background-color: rgb(115, 115, 115);
+    .carousel-item {
+        width: 100%;
+        height: 400px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+    }
+    .card_title {
+        text-align: center;
+        color: #000000;
+    }
+}
